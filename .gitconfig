@@ -1,0 +1,15 @@
+[user]
+	name = Alexander Mazyrin
+	email = algoritmist1618@gmail.com
+[core]
+	autocrlf = input
+	safecrlf = true
+	editor = vim
+[alias]
+	hist = log --pretty=format:\"%h %ad | [%an] %s%d\" --date=short --graph
+[sendemail]
+	smtpEncryption = tls
+	smtpServer = smtp.gmail.com
+	smtpUser = algoritmist1618@gmail.com
+	smtpServerPort = 587
+	suppresscc = self
