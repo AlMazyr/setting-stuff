@@ -27,6 +27,11 @@ setopt correct
 
 # aliases
 alias ls='ls --color=auto'
+alias ll='ls -lahF'
 alias tree='tree -C'
-alias qemu_custom_kernel='qemu-system-x86_64 -kernel /boot/vmlinuz-4.12.0-rc4-ARCH+ -initrd /boot/initramfs-4.12.0-rc4-ARCH+.img -append 'console=ttyS0' -nographic'
-alias mk_initramfs_custom='sudo mkinitcpio -c /etc/mkinitcpio_custom.conf -k 4.12.0-rc4-ARCH+ -g /boot/initramfs-4.12.0-rc4-ARCH+.img'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias mk_initramfs_custom='sudo mkinitcpio -c /etc/mkinitcpio_custom.conf -k 4.12.0-ARCH+ -g /boot/initramfs-4.12.0-ARCH+.img'
+
+export PATH=/home/alem/sbin:$PATH
