@@ -6,7 +6,7 @@ bindkey -e
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/alem/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -34,4 +34,6 @@ alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
 alias mk_initramfs_custom='sudo mkinitcpio -c /etc/mkinitcpio_custom.conf -k 4.12.0-ARCH+ -g /boot/initramfs-4.12.0-ARCH+.img'
 
-export PATH=/home/alem/sbin:$PATH
+export PATH=$HOME/sbin:$PATH
+
+source $HOME/.zshrc-local
