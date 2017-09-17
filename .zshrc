@@ -25,14 +25,13 @@ setopt menucomplete
 zstyle ':completion:*' menu select=1 _complete _ignored _approximate
 setopt correct
 
-# aliases
+# common aliases
 alias ls='ls --color=auto'
 alias ll='ls -lahF'
 alias tree='tree -C'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
-alias mk_initramfs_custom='sudo mkinitcpio -c /etc/mkinitcpio_custom.conf -k 4.12.0-ARCH+ -g /boot/initramfs-4.12.0-ARCH+.img'
 
 export PATH=$HOME/sbin:$PATH
 
