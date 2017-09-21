@@ -19,6 +19,7 @@ set list
 " highlighted column
 set colorcolumn=80
 
+autocmd BufNewFile,BufRead *.launch set syntax=xml
 
 " FINDING FILES:
 
