@@ -2,7 +2,7 @@
 	name = Alexander Mazyrin
 	email = algoritmist1618@gmail.com
 [core]
-	autocrlf = input
+	autocrlf = false
 	safecrlf = true
 	editor = vim
 [alias]
