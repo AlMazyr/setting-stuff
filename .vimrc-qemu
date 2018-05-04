@@ -12,8 +12,13 @@ set nocompatible
 colorscheme darkblue
 " enable syntax and plugins
 syntax enable
-filetype plugin indent on
+" filetype plugin indent on
 " show special characters
+set expandtab
+"set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set backspace=indent,eol,start
 set listchars=eol:$,tab:>·,trail:·,extends:>,precedes:<
 set list
 " highlighted column
