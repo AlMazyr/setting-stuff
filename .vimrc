@@ -21,6 +21,9 @@ set colorcolumn=80
 
 autocmd BufNewFile,BufRead *.launch set syntax=xml
 
+" highlight all the occurences of the variable under cursor in the file
+:autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
+
 " pair completion
 inoremap {      {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
